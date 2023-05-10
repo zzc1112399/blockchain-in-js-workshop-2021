@@ -1,9 +1,27 @@
+import sha256 from 'crypto-js/sha256.js'
+/*
+所属链chain
+父区块的hash
+所属位置index
+时间戳time
+*/
 class Block {
-  // 1. 完成构造函数及其参数
-  /* 构造函数需要包含
-
-  */
-  constructor() {}
-}
+    constructor(chain,previousHash,index,time) {
+      this.Chain = this.Chain
+      this.previousHash = previousHash
+      this.index=index
+      this.time=time
+      this.hash = this.calculateHash()
+    }
+    //hash计算
+    calculateHash() {
+      return sha256(
+        this.Chain+
+          this.previousHash +
+          this.index+
+          this.time
+      ).toString()
+    }
+  } 
 
 export default Block

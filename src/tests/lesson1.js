@@ -21,7 +21,7 @@ const main = () => {
   )
 
   blockchain.blocks[newBlock.hash] = newBlock
-
+ 
   var nextBlock = new Block(
     blockchain,
     newBlock.hash,
@@ -52,8 +52,7 @@ const main = () => {
   )
 
   blockchain.blocks[thirdBlock.hash] = thirdBlock
-
-  longestChain = blockchain.longestChain()
+   longestChain = blockchain.longestChain()
 
   // 区块检查
   console.assert(longestChain.length == 3, 'Block height should be 2')
