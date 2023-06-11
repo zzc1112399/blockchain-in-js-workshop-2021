@@ -1,7 +1,7 @@
 class Trie{
     constructor(){
-        this.idx=0;//idx 为节点编号，0为根节点
-        this.children=new Array(100010);//初始节点最大个数为100010
+        this.idx=0;
+        this.children=new Array(100010);
         for (let i=0;i<children.length;i++) 
             this.children[i]=new Int32Array(26);
         this.count=new Int32Array(100010);
