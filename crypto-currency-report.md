@@ -51,6 +51,9 @@ https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/ece82212
 
 
 ### 主观与讨论题内容
+如何设计能够帮助提⾼查询效率?
+
+可以对其进行路径压缩用字符串作为下标
 
 ---
 
@@ -60,7 +63,7 @@ https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/ece82212
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
+https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/ee254ee17b3e89567cc03b61642375f3c29a5390
 
 
 ### 代码截图
@@ -71,7 +74,17 @@ https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d8
 
 
 ### 主观与讨论题内容
+基于字典树, 以太坊做了哪些改良, 为什么?
+相比于传统的二叉树，Merkle Patricia Trie 带来了以下改进：
+更高的存储效率。Merkle Patricia Trie 可以压缩 more branch nodes 和 more extension nodes，使得节点覆盖范围更大，数据存储更紧凑。
+更高的安全性。由于采用了Merkle 树的思想，Merkle Patricia Trie 可以验证数据的完整性和准确性，抵御了数据篡改和错误。
+高效的状态检索。Merkle Patricia Trie 可以快速地寻址到某个状态值，为以太坊的执行效率提供了很大优势。
+除了Merkle Patricia Trie，以太坊还利用了默克尔树等技术优化了其存储结构，从而更好地满足了以太坊智能合约的需求。
 
+高效的状态存储和检索。
+mpt解决的问题：
+以太坊是基于区块链技术的智能合约平台，智能合约是一种被编写在区块链上的程序，它们可以对用户发送的交易做出响应。在以太坊中，每个智能合约都有一个状态，状态存储着智能合约的数据和状态变量，包括账户和余额等信息。由于以太坊网络中有大量的智能合约，所以状态存储是一个非常重要的问题。如果状态存储不够高效，将导致执行智能合约的速度变慢，从而影响整个以太坊网络的运作。
 
+传统的基于树形结构的数据结构（如二叉树、B+树等）仅能满足单点查询和单点写入的场景，而在以太坊中，读写都会涉及到状态树的访问和更新，传统数据结构不能直接适用。MPT采用高效的字典树结构和Merkle树的思想，极大地提高了状态存储的效率和安全性。
 
 ---
