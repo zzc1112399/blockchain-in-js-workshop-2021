@@ -41,8 +41,7 @@ https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/2a3f0bf9
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
-
+https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/ece822122cee570e6d8061b4f94ceb180589b888
 
 ### 代码截图
 
