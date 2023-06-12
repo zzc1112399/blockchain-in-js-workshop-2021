@@ -12,7 +12,8 @@
 
 ## 代码仓库链接
 
-https://github.com/zzc1112399/blockchain-in-js-workshop-2021
+https://github.com/zzc1112399/blockchain-in-js-workshop-2021/blob/lesson1/crypto-currency-report.md
+
 
 
 
